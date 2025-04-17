@@ -1,31 +1,34 @@
-# NexFlow
+# Team One Line Coders - NexFlow
 
-NexFlow is an AI-powered platform designed to integrate all developer tools and platforms like GitHub, Jira, Postman, and more into a single place. With NexFlow, you can access your accounts and perform tasks directly using our AI Chatbot, streamlining your workflow and boosting productivity.
+## Project Title: NexFlow - AI-Powered Workflow Manager
 
-## Features
+### Problem Statement
 
-- **Unified Platform**: Access and manage multiple developer tools from a single interface.
-- **AI Chatbot**: Perform tasks and automate workflows using natural language commands.
-- **Integrations**: Supports popular tools like GitHub, Jira, Postman, and more.
-- **Customizable Sidebar**: Manage chats and tasks with an intuitive sidebar.
-- **Interactive 3D Background**: Enhance user experience with a visually appealing 3D scene.
+Managing multiple developer tools and platforms can be time-consuming and inefficient. Developers often switch between various tools like GitHub, Jira, and Postman, which disrupts their workflow and reduces productivity. NexFlow addresses this problem by integrating these tools into a unified platform powered by AI, enabling seamless task automation and management.
 
-## Getting Started
+### Tech Stack
 
-Follow these steps to set up and run NexFlow on your local machine.
+- **Frontend**: React, TypeScript, Three.js
+- **Backend**: Node.js, Express, OpenAI API, MCP Servers
+- **Deployment**: Vercel
+- **Other Tools**: Axios, dotenv, nodemon
 
-### Prerequisites
+### Setup Instructions
+
+Follow these steps to set up and run NexFlow on your local machine:
+
+#### Prerequisites
 
 - Node.js (v16 or higher)
 - npm or yarn
 - A Veyrax API key and OpenAI API key (for backend functionality)
 
-### Installation
+#### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/nexflow.git
+   git clone https://github.com/MuditGarg007/One-Line-Coders.git
    cd nexflow
    ```
 
@@ -39,12 +42,13 @@ Follow these steps to set up and run NexFlow on your local machine.
    ```
 
 3. Create a `.env` file in the `backend` directory and add the following:
+
    ```
    VEYRAX_API_KEY=your_veyrax_api_key
    OPENAI_API_KEY=your_openai_api_key
    ```
 
-### Running the Application
+#### Running the Application
 
 1. Start the backend server:
 
@@ -62,37 +66,23 @@ Follow these steps to set up and run NexFlow on your local machine.
 
 3. Open your browser and navigate to `http://localhost:3000`.
 
-## Usage
+### Deployment
 
-### Landing Page
+The application is deployed and accessible at: [NexFlow Deployment](https://hackstasy.vercel.app/)
 
-- The landing page introduces NexFlow and allows users to input commands for the AI Chatbot.
+### Submission Rules
 
-### Integrations Page
+- Repository Name: `One Line Coders`
+- Last Commit: Before or at 5:00 PM on 17th April
+- All team members added as collaborators
+- No plagiarism — original code only
 
-- Browse and search for available integrations.
-- Connect to tools like GitHub, Jira, and Postman.
+### Team Members
 
-### Chat Page
-
-- Interact with the AI Chatbot to perform tasks such as creating repositories, sending emails, or managing projects.
-
-## Project Structure
-
-```
-NexFlow/
-├── frontend/          # React-based frontend application
-│   ├── src/           # Source code for the frontend
-│   ├── public/        # Static assets
-│   └── package.json   # Frontend dependencies
-├── backend/           # Express-based backend server
-│   ├── index.js       # Main server file
-│   ├── package.json   # Backend dependencies
-│   └── .env           # Environment variables
-└── README.md          # Project documentation
-```
-
-## Contributing
+- **Mudit Garg**
+- **Shlok Bhardwaj**
+- **Kairav Mittal**
+- **Yuvraj Bakshi**
 
 We welcome contributions! Please follow these steps:
 
