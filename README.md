@@ -6,6 +6,9 @@
 
 Managing multiple developer tools and platforms can be time-consuming and inefficient. Developers often switch between various tools like GitHub, Jira, and Postman, which disrupts their workflow and reduces productivity. NexFlow addresses this problem by integrating these tools into a unified platform powered by AI, enabling seamless task automation and management.
 
+### Demo
+[Demo Link](https://drive.google.com/file/d/1lZoA6gAb8hCYzry1hR2x5gboDJaYxI24/view?usp=sharing)
+
 ### Tech Stack
 
 - **Frontend**: React, TypeScript, Three.js
