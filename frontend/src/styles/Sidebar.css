@@ -1,0 +1,124 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #202123;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 260px;
+}
+
+.sidebar.closed {
+  width: 50px;
+}
+
+.sidebar-header {
+  height: 40px;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: sticky;
+  top: 5rem;
+  background: #202123;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.toggle-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  min-width: 40px;
+  height: 40px;
+}
+
+.new-chat-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "TeknafRegular", sans-serif;
+  transition: background-color 0.2s ease;
+  flex: 1;
+  white-space: nowrap;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-chat-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.chat-list {
+  padding: 0.5rem;
+  margin-top: 5.5rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 80px);
+  /* Hide scrollbar for different browsers while maintaining functionality */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat-list::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-item {
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 0  ;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: background-color 0.2s ease;
+  -webkit-border-radius: 0  ;
+  -moz-border-radius: 0  ;
+  -ms-border-radius: 0  ;
+  -o-border-radius: 0  ;
+}
+
+.chat-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chat-item.selected {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.chat-title {
+  color: white;
+  font-family: "TeknafRegular", sans-serif;
+  font-size: 0.9rem;
+}
+
+.chat-timestamp {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+.sidebar.closed .new-chat-button,
+.sidebar.closed .chat-list {
+  opacity: 0;
+  pointer-events: none;
+}

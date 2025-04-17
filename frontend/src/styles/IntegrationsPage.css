@@ -1,0 +1,234 @@
+.integrations-container {
+    padding: 100px 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .integrations-title {
+    font-family: "Molgan", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .nex {
+    color: #007bff;
+  }
+  
+  .flow,
+  .integration-text {
+    color: white;
+  }
+  
+  .search-bar {
+    margin: 2rem 0;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-family: "TeknafRegular", sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .categories-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .categories-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-family: "TeknafRegular", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .category-button.active,
+  .category-button:hover {
+    background: #007bff;
+    border-color: #007bff;
+  }
+  
+  .integrations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .integration-card,
+  .integration-request-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Fixed height for all cards */
+    position: relative;
+  }
+  
+  .integration-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center; /* Center children horizontally */
+  }
+  
+  .integration-card:hover,
+  .integration-request-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+  }
+  
+  .integration-card h3,
+  .integration-request-card h3 {
+    font-family: "TeknafRegular", sans-serif;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    height: 1.5em; /* Fixed height for title */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .integration-card h3,
+  .integration-card p {
+    text-align: center; /* Center text content */
+    width: 100%;
+  }
+  
+  .integration-card p,
+  .integration-request-card p {
+    font-family: "TeknafRegular", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .card-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto; /* Push buttons to bottom */
+    padding-top: 1.5rem;
+  }
+  
+  .docs-button,
+  .connect-button,
+  .request-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    background: transparent;
+    color: white;
+    font-family: "TeknafRegular", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+  }
+  
+  .connect-button,
+  .request-button {
+    background: #007bff;
+    border-color: #007bff;
+  }
+  
+  .docs-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .connect-button:hover,
+  .request-button:hover {
+    background: #0056b3;
+  }
+  
+  .question-mark {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .integration-request-card .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .integration-request-card h3 {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  
+  .integration-request-card p {
+    text-align: center;
+    margin-bottom: auto;
+  }
+  
+  .integration-request-card .request-button {
+    width: 100%;
+    margin-top: auto;
+    padding: 0.75rem;
+  }
+  
+  @media (max-width: 768px) {
+    .integrations-container {
+      padding: 80px 20px 20px;
+    }
+  
+    .integrations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
