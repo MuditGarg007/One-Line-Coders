@@ -1,5 +1,3 @@
-# Team One Line Coders - NexFlow
-
 ## Project Title: NexFlow - AI-Powered Workflow Manager
 
 ### Problem Statement
